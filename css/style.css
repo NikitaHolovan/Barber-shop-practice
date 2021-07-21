@@ -178,5 +178,11 @@ p.section-description {
 }
 
 .contact-link {
-  color: #fff;
+  color: var(--text-secondary);
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+.contact-link.mail {
+  text-decoration-line: underline;
 }
