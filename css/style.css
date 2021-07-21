@@ -61,6 +61,10 @@ nav.navbar .btn-box {
   display: inline-block;
 }
 
+.phone-link {
+  color: #fff;
+}
+
 .nav-links {
   background-color: aquamarine;
   display: inline-block;
@@ -171,4 +175,8 @@ p.section-description {
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
+}
+
+.contact-link {
+  color: #fff;
 }
