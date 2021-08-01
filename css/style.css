@@ -38,6 +38,16 @@ a {
   color: #9da4bd99;
 }
 
+.suptitle-primary::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  vertical-align: middle;
+  background-color: rgba(157, 164, 189, 0.6);
+}
+
 h2.section-title {
   font-family: "Raleway";
   font-weight: bold;
@@ -114,6 +124,7 @@ a.nav-link:hover,
 .section-box {
   width: 100%;
   padding: 130px 55px;
+  background-color: rgba(157, 164, 189, 0.6);
 }
 
 .about-section,
@@ -168,7 +179,9 @@ p.section-description {
 
 .slider {
   width: calc(100% - 155px);
-  background-image: url(../images/Slider/Slider_img-1.jpg);
+  background-image: url(../images/Slider/Slider_img-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sidebar {
@@ -178,8 +191,26 @@ p.section-description {
 }
 
 /* Price styles */
+.price-section {
+  background-image: url(../images/price/price-background.png);
+  background-color: rgba(17, 19, 25, 1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: ;
+}
+.price-list:nth-child(odd) {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.price-list:nth-child(even) {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
 
 .price-list {
+  display: inline-flex;
+  width: 49%;
+  flex-wrap: wrap;
+}
+.price-box {
   display: flex;
 }
 
@@ -187,6 +218,8 @@ p.section-description {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
 }
 
 .price-item p,
@@ -230,6 +263,9 @@ p.section-description {
 }
 
 /* Masters styles here */
+.master-box {
+  background-color: burlywood;
+}
 
 .masters-list {
   display: flex;
@@ -250,6 +286,29 @@ p.section-description {
   color: #ff6c00;
 }
 
+.master-social-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 90px;
+}
+.master-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.master-social-link:hover svg,
+.master-social-link:focus svg {
+  fill: #ff6c00, 100 %;
+}
+.master-social-link svg {
+  height: 20px;
+  fill: ;
+}
 /* Footer styles here */
 
 .footer-contacts {
